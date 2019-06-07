@@ -4,6 +4,7 @@ public class Cat extends Pet {
 
     public Cat(String name){
         super(name);
+        this.type = "Cat";
     }
 
 

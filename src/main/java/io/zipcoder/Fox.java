@@ -5,6 +5,7 @@ public class Fox extends Pet {
 
     public Fox(String name) {
         super(name);
+        this.type = "Fox";
     }
 
     @Override
