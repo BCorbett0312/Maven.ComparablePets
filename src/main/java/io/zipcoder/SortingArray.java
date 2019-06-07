@@ -6,7 +6,7 @@ import java.util.Comparator;
 
 public class SortingArray {
 
-    Comparator<Pet> newComparator = Comparator.comparing(Pet::getType).thenComparing(Pet::getName);
+    private Comparator<Pet> newComparator = Comparator.comparing(Pet::getType).thenComparing(Pet::getName);
 
     public ArrayList<Pet> sortTheArray(ArrayList<Pet> myArrayList){
         Collections.sort(myArrayList, newComparator);

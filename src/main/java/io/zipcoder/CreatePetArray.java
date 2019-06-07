@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CreatePetArray {
-    Console myConsole = new Console();
-    Scanner scanner = new Scanner(System.in);
-    CheckPetValidity check = new CheckPetValidity();
-    GeneratePetObjects makePets = new GeneratePetObjects();
-    ArrayList<Pet> petArrayList = new ArrayList<>();
+    private Console myConsole = new Console();
+    private Scanner scanner = new Scanner(System.in);
+    private CheckPetValidity check = new CheckPetValidity();
+    private GeneratePetObjects makePets = new GeneratePetObjects();
+    private ArrayList<Pet> petArrayList = new ArrayList<>();
 
     public ArrayList<Pet> createPets(Integer numPets) {
         if (numPets < 0) {
