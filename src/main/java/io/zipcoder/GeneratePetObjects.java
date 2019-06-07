@@ -8,28 +8,26 @@ public class GeneratePetObjects {
     Console myConsole = new Console();
     ArrayList<Pet> petArrayList = new ArrayList<>();
 
-    public void makePet(String petType){
+    public Pet makePet(String petType){
         myConsole.askForPetName();
         String petName = scanner.next();
         switch (petType){
             case "dog":
-                petArrayList.add(new Dog(petName));
-                break;
+                return new Dog(petName);
+
             case "cat":
-                petArrayList.add(new Cat(petName));
-                break;
+                return new Cat(petName);
+
             case "bird":
-                petArrayList.add(new Bird(petName));
-                break;
+                return new Bird(petName);
+
             case "fox":
-                petArrayList.add(new Fox(petName));
-                break;
+                return new Fox(petName);
+
         }
-
+    return null;
     }
 
-    public ArrayList<Pet> sendArrayList(){
-        return petArrayList;
-    }
+
 
 }

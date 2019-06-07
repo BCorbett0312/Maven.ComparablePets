@@ -14,9 +14,9 @@ public class Application {
 
         petArrayList = myPets.createPets(myConsole.askHowManyPets());
 
-
+        System.out.println("Your pets in no particular order are as follows");
         myConsole.printList(petArrayList);
-
+        System.out.println("The list is sorted below by type then by name");
         myConsole.printList(sorted.sortTheArray(petArrayList));
 
 

@@ -9,7 +9,7 @@ public class Console {
     public Integer askHowManyPets(){
         System.out.println("How many pets do you have?"+ "\nEnter 0 to quit");
         while (!scanner.hasNextInt()) {
-            System.out.println("That is not a valid number of animals");
+            System.out.println("That is not a valid number of animals"+ "\nPlease enter a valid number");
             scanner.next();
         }
          Integer numberOfPets = scanner.nextInt();
@@ -28,7 +28,7 @@ public class Console {
 
         for (
                 int i = 0; i < myList.size(); i++) {
-            System.out.println("The animal named " + myList.get(i).getName() + " says " + myList.get(i).speak() + "!");
+            System.out.println("The "+ myList.get(i).getType()+ " named " + myList.get(i).getName() + " says " + myList.get(i).speak() + "!");
 
         }
 

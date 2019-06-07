@@ -8,6 +8,7 @@ public class CreatePetArray {
     Scanner scanner = new Scanner(System.in);
     CheckPetValidity check = new CheckPetValidity();
     GeneratePetObjects makePets = new GeneratePetObjects();
+    ArrayList<Pet> petArrayList = new ArrayList<>();
 
     public ArrayList<Pet> createPets(Integer numPets) {
         if (numPets < 0) {
@@ -22,13 +23,13 @@ public class CreatePetArray {
                     i--;
                     myConsole.enterValidPet();
                 } else {
-                    makePets.makePet(petType);
+                    petArrayList.add(makePets.makePet(petType));
                     numPets--;
                 }
 
             }
         }
-        return makePets.sendArrayList();
+        return petArrayList;
     }
 }
 
