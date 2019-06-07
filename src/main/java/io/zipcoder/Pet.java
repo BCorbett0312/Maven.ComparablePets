@@ -14,15 +14,7 @@ public abstract class Pet {
 
     public String getType(){
         return type;
-
     }
-
-
-    public void setName(String name){
-        this.name=name;
-    }
-
-
 
     public String speak(){
 

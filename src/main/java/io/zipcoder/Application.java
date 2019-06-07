@@ -6,9 +6,11 @@ import java.util.ArrayList;
 public class Application {
     public static void main(String[] args) {
         Console myConsole = new Console();
-        CreatePets myPets = new CreatePets();
+        CreatePetArray myPets = new CreatePetArray();
         ArrayList<Pet> petArrayList;
         SortingArray sorted = new SortingArray();
+
+
 
         petArrayList = myPets.createPets(myConsole.askHowManyPets());
 
