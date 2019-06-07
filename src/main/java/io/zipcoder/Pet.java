@@ -13,7 +13,7 @@ public abstract class Pet {
     }
 
     public String getType(){
-        return this.type=type;
+        return type;
 
     }
 
