@@ -34,9 +34,14 @@ public class Console {
 
     }
 
+    public void youGotNoPetsDummy(){
+        System.out.println("It appears you have no pets and do not need this application." +
+                "\nIf you have pets restart and enter a positive number");
+    }
 
-
-
+    public void enterValidPet(){
+        System.out.println("Please enter a valid pet type");
+    }
 
 
 }

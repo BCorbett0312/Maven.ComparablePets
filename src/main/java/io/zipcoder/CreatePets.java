@@ -10,7 +10,7 @@ public class CreatePets {
 
     public ArrayList<Pet> createPets(Integer numPets) {
         if (numPets < 0) {
-            System.out.println("It appears you have no pets and do not need this application." + "\nIf you have pets restart and enter a positive number");
+            myConsole.youGotNoPetsDummy();
         }
 
         while (numPets > 0) {
@@ -40,7 +40,7 @@ public class CreatePets {
                     petArrayList.add(new Bird(petName));
                     numPets--;
                 } else {
-                    System.out.println("Please enter a valid pet type");
+                    myConsole.enterValidPet();
                     i--;
                 }
             }
