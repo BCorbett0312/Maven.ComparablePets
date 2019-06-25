@@ -11,5 +11,6 @@ public class SortingArray {
     public ArrayList<Pet> sortTheArray(ArrayList<Pet> myArrayList){
         Collections.sort(myArrayList, newComparator);
         return myArrayList;
+
     }
 }

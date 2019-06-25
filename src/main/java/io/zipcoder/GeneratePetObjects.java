@@ -4,18 +4,16 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GeneratePetObjects {
-    Scanner scanner = new Scanner(System.in);
-    Console myConsole = new Console();
     ArrayList<Pet> petArrayList = new ArrayList<>();
 
-    public Pet makePet(String petType){
-        myConsole.askForPetName();
-        String petName = scanner.next();
+    public Pet makePet(String petType, String petName){
         switch (petType){
             case "dog":
                 return new Dog(petName);
 
             case "cat":
+
+
                 return new Cat(petName);
 
             case "bird":

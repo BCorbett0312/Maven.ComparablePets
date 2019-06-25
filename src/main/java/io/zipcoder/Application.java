@@ -2,15 +2,15 @@ package io.zipcoder;
 
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
         Console myConsole = new Console();
-        CreatePetArray myPets = new CreatePetArray();
+        Scanner scanner = new Scanner(System.in);
+        CreatePetArray myPets = new CreatePetArray(myConsole, scanner);
         ArrayList<Pet> petArrayList;
         SortingArray sorted = new SortingArray();
-
-
 
         petArrayList = myPets.createPets(myConsole.askHowManyPets());
 
